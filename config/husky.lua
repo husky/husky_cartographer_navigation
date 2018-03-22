@@ -46,10 +46,9 @@ MAP_BUILDER.use_trajectory_builder_2d = true
 
 TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
 
-TRAJECTORY_BUILDER_2D.min_range = 0.1
-TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
+TRAJECTORY_BUILDER_2D.min_range = 0.3
+TRAJECTORY_BUILDER_2D.missing_data_ray_length = 2.
 TRAJECTORY_BUILDER_2D.use_imu_data = true
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 10
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 15
 
@@ -69,7 +68,7 @@ POSE_GRAPH.global_constraint_search_after_n_seconds = 30 -- Increase
 
 ---------Global/Local SLAM---------
 TRAJECTORY_BUILDER_2D.submaps.num_range_data = 100 -- Decrease
-TRAJECTORY_BUILDER_2D.max_range = 5.5 -- Decrease
+TRAJECTORY_BUILDER_2D.max_range = 10. -- Decrease
 
 -------------------------------------------------------------------------------------
 
