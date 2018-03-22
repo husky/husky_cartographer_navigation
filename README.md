@@ -12,7 +12,7 @@ To adapt this demo to your own Husky, you may need to clone the [husky_cartograp
 
   2. Run the following script to create a workspace and install proto3. This script will also install the packages required to use Cartographer as well as the [husky](https://github.com/husky/husky) package:
 
-     `source $(pwd)/husky_cartographer_navigation/protobuf3_local.sh`
+     `source $(pwd)/husky_cartographer_navigation/husky_cartographer_install.sh`
 
   3. Open two new terminal/tabs, source the workspace for each terminal/tab:
 
