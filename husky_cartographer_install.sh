@@ -7,7 +7,7 @@ mkdir husky_cartographer_ws
 cd husky_cartographer_ws
 wstool init src
 cp -r ../husky_cartographer_navigation ./src
-git -C ./src -b kinetic-devel clone https://github.com/husky/husky.git
+git -C ./src clone -b kinetic-devel https://github.com/husky/husky.git
 
 # Merge the cartographer_ros.rosinstall file and fetch code for dependencies.
 wstool merge -t src https://raw.githubusercontent.com/googlecartographer/cartographer_ros/master/cartographer_ros.rosinstall
