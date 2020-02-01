@@ -14,9 +14,9 @@ To adapt this demo to your own Husky, you may need to clone the [husky_cartograp
 
   2. Install the following ROS packages:
 
-     `sudo apt-get install ros-melodic-husky-* ros-melodic-cartographer`
+     `sudo apt-get install ros-melodic-husky-* ros-melodic-cartographer-ros`
 
-  3. Open two new terminal/tabs, source the workspace for each terminal/tab:
+  3. Build the workspace and open two new terminal/tabs, source the workspace for each terminal/tab:
 
      `source devel/setup.bash`
 
