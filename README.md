@@ -8,25 +8,25 @@ To adapt this demo to your own Husky, you may need to clone the [husky_cartograp
 
 ## Instructions
 
-  1. To get started with 2-D SLAM using Google Cartographer, clone this repository into your working directory:
+  1. To get started with 2-D SLAM using Google Cartographer, clone this repository into your working directory (e.g. catkin_ws):
 
      `git clone http://github.com/husky/husky_cartographer_navigation.git`
 
-  2. Run the following script to create a workspace and install proto3. This script will also install the packages required to use Cartographer as well as the [husky](https://github.com/husky/husky), [husky_desktop](https://github.com/husky/husky_desktop), and [husky_simulator](https://github.com/husky/husky_simulator) packages:
+  2. Install the following ROS packages:
 
-     `source $(pwd)/husky_cartographer_navigation/husky_cartographer_install.sh`
+     `sudo apt-get install ros-melodic-husky-* ros-melodic-cartographer-ros`
 
-  3. Open two new terminal/tabs, source the workspace for each terminal/tab:
+  3. Build the workspace and open two new terminal/tabs, source the workspace for each terminal/tab:
 
-     `source install_isolated/setup.bash`
+     `source devel/setup.bash`
 
-      1. Launch the Gazebo simulation:
+      - Launch the Gazebo simulation:
 
-         `roslaunch husky_gazebo husky_playpen.launch`
+        `roslaunch husky_gazebo husky_playpen.launch`
 
-      2. Launch the Cartographer node to begin SLAM (NOTE: This also launches RViz to visualize the robot):
+      - Launch the Cartographer node to begin SLAM (NOTE: This also launches RViz to visualize the robot):
 
-         `roslaunch husky_cartographer_navigation cartographer_demo.launch`
+        `roslaunch husky_cartographer_navigation cartographer_demo.launch`
 
   4. In the Rviz visualizer, make sure the visualizers in the Navigation group are enabled.
 
