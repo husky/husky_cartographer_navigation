@@ -4,7 +4,7 @@
   <version>0.0.0</version>
   <description>Launch files and code for autonomous navigation of the Husky using Google Cartographer</description>
   <author email="abhattacharjee@clearpathrobotics.com">Aditya Bhattacharjee</author>
-  <maintainer email="abhattacharjee@clearpathrobotics.com">Aditya Bhattacharjee</maintainer>
+  <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
@@ -15,8 +15,6 @@
   <run_depend>xacro</run_depend>
   <run_depend>cartographer_ros</run_depend>
 
-
   <export>
-
   </export>
 </package>
