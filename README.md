@@ -12,9 +12,9 @@ To adapt this demo to your own Husky, you may need to clone the [husky_cartograp
 
      `git clone http://github.com/husky/husky_cartographer_navigation.git`
 
-  2. Install the following ROS packages:
+  2. Install the dependencies in your workspace (e.g. catkin_ws):
 
-     `sudo apt-get install ros-melodic-husky-* ros-melodic-cartographer-ros`
+     `rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO -y`
 
   3. Build the workspace and open two new terminal/tabs, source the workspace for each terminal/tab:
 
@@ -24,9 +24,12 @@ To adapt this demo to your own Husky, you may need to clone the [husky_cartograp
 
         `roslaunch husky_gazebo husky_playpen.launch`
 
-      - Launch the Cartographer node to begin SLAM (NOTE: This also launches RViz to visualize the robot):
+      - Launch the Cartographer node to begin SLAM:
 
         `roslaunch husky_cartographer_navigation cartographer_demo.launch`
+
+      - Launch Rviz:
+        `roslaunch husky_viz view_robot.launch`
 
   4. In the Rviz visualizer, make sure the visualizers in the Navigation group are enabled.
 
