@@ -2,8 +2,8 @@
 Changelog for package husky_cartographer_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.1 (2020-02-20)
+------------------
 * Updated maintainer.
 * Removed rviz to use husky_viz.
 * minor change to install instructions
