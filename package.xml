@@ -1,6 +1,6 @@
 <package format="2">
   <name>husky_cartographer_navigation</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>Launch files and code for autonomous navigation of the Husky using Google Cartographer</description>
   <author email="abhattacharjee@clearpathrobotics.com">Aditya Bhattacharjee</author>
   <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
